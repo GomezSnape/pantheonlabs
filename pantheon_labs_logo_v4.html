@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pantheon Labs — Logo v4</title>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --purple:      #5B2D8E;
+    --purple-mid:  #7B3FBE;
+    --white:       #F5F2FF;
+    --green:       #6B8F71;
+    --green-light: #8BAF91;
+    --dark:        #1A0A2E;
+  }
+  body {
+    background: #0f0d18;
+    font-family: 'Oswald', sans-serif;
+    color: var(--white);
+    padding: 48px 28px;
+  }
+  .page-label {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #444;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+  .variant-block { margin-bottom: 64px; }
+  .variant-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .variant-note {
+    font-size: 12px;
+    color: #6B8F71;
+    letter-spacing: 1px;
+    margin-bottom: 28px;
+    font-family: monospace;
+  }
+  .cards { display: flex; flex-wrap: wrap; gap: 20px; }
+  .card {
+    border-radius: 14px;
+    padding: 44px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    min-width: 240px;
+  }
+  .card-dark   { background: var(--dark); border: 1px solid #2a1a4a; }
+  .card-purple { background: var(--purple); border: 1px solid var(--purple-mid); }
+  .card-white  { background: #F5F2FF; border: 1px solid #ddd; }
+
+  .logo { display: flex; align-items: center; gap: 20px; }
+  .wordmark { display: flex; flex-direction: column; line-height: 1; }
+  .wm-top {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  .wm-divider { height: 1px; margin: 5px 0; }
+  .wm-sub {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+  }
+  .on-dark .wm-top   { color: #F5F2FF; }
+  .on-dark .wm-sub   { color: #F5F2FF; }
+  .on-purple .wm-top { color: #fff; }
+  .on-purple .wm-sub { color: #fff; }
+  .on-white .wm-top  { color: var(--dark); }
+  .on-white .wm-sub  { color: var(--dark); }
+</style>
+</head>
+<body>
+
+<p class="page-label">Pantheon Labs — Logo v4 · Minimal Moai · Single Line · Facing Right</p>
+
+<!-- Reusable moai path macro via SVG symbol -->
+<svg width="0" height="0" style="position:absolute;">
+  <defs>
+    <!-- Moai facing right (nose/brow jut to the right) -->
+    <g id="moai">
+      <!-- Base slab -->
+      <line x1="2" y1="58" x2="34" y2="58" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- Body -->
+      <path d="M8 58 L8 43 Q8 41 10 41 L26 41 Q28 41 28 43 L28 58"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Neck -->
+      <path d="M12 41 L12 36 Q12 34 14 34 L22 34 Q24 34 24 36 L24 41"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Head profile — rounded, facing right -->
+      <path d="
+        M12 34
+        Q9 34 9 31
+        L9 16
+        Q9 11 13 9
+        L20 8
+        Q25 8 28 11
+        Q31 14 31 18
+        Q33 20 33 23
+        Q33 26 31 27
+        Q29 29 27 30
+        L12 34
+      " stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      <!-- Brow overhang — juts right, defining moai feature -->
+      <path d="M9 20 Q7 21 7 23 Q7 25 9 25 L31 25"
+            stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <!-- Eye — single dot on right (face) side -->
+      <circle cx="26" cy="29" r="1.8"/>
+      <!-- Crown tab -->
+      <path d="M13 8 L13 4 Q13 2 15 2 L23 2 Q25 2 25 4 L25 8"
+            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </g>
+  </defs>
+</svg>
+
+<!-- ════════════════════════
+     GREEN LINE
+════════════════════════ -->
+<div class="variant-block">
+  <div class="variant-label">Green Line</div>
+  <div class="variant-note">#6B8F71 — earthy, unexpected, distinctive</div>
+  <div class="cards">
+
+    <div class="card card-dark">
+      <div class="logo on-dark">
+        <svg width="36" height="62" viewBox="0 0 36 62" fill="none" stroke="#6B8F71">
+          <use href="#moai"/>
+        </svg>
+        <div class="wordmark">
+          <span class="wm-top">PANTHEON</span>
+          <div class="wm-divider" style="background:#6B8F71;"></div>
+          <span class="wm-sub">LABS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-purple">
+      <div class="logo on-purple">
+        <svg width="36" height="62" viewBox="0 0 36 62" fill="none" stroke="#c8f0cc">
+          <use href="#moai"/>
+        </svg>
+        <div class="wordmark">
+          <span class="wm-top">PANTHEON</span>
+          <div class="wm-divider" style="background:rgba(255,255,255,0.4);"></div>
+          <span class="wm-sub">LABS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-white">
+      <div class="logo on-white">
+        <svg width="36" height="62" viewBox="0 0 36 62" fill="none" stroke="#6B8F71">
+          <use href="#moai"/>
+        </svg>
+        <div class="wordmark">
+          <span class="wm-top">PANTHEON</span>
+          <div class="wm-divider" style="background:#6B8F71;"></div>
+          <span class="wm-sub">LABS</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ════════════════════════
+     WHITE LINE
+════════════════════════ -->
+<div class="variant-block">
+  <div class="variant-label">White Line</div>
+  <div class="variant-note">#F5F2FF — clean, high contrast, timeless</div>
+  <div class="cards">
+
+    <div class="card card-dark">
+      <div class="logo on-dark">
+        <svg width="36" height="62" viewBox="0 0 36 62" fill="none" stroke="#F5F2FF">
+          <use href="#moai"/>
+        </svg>
+        <div class="wordmark">
+          <span class="wm-top">PANTHEON</span>
+          <div class="wm-divider" style="background:#F5F2FF;"></div>
+          <span class="wm-sub">LABS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card card-purple">
+      <div class="logo on-purple">
+        <svg width="36" height="62" viewBox="0 0 36 62" fill="none" stroke="#fff">
+          <use href="#moai"/>
+        </svg>
+        <div class="wordmark">
+          <span class="wm-top">PANTHEON</span>
+          <div class="wm-divider" style="background:rgba(255,255,255,0.5);"></div>
+          <span class="wm-sub">LABS</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- white bg — purple fallback so it's visible -->
+    <div class="card card-white">
+      <div class="logo on-white">
+        <svg width="36" height="62" viewBox="0 0 36 62" fill="none" stroke="#7B3FBE">
+          <use href="#moai"/>
+        </svg>
+        <div class="wordmark">
+          <span class="wm-top">PANTHEON</span>
+          <div class="wm-divider" style="background:#7B3FBE;"></div>
+          <span class="wm-sub">LABS</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ════════════════════════
+     SIZE SCALE
+════════════════════════ -->
+<div class="variant-block">
+  <div class="variant-label">Size Scale — Green on Dark</div>
+  <div class="variant-note">favicon · nav · hero</div>
+  <div class="card card-dark" style="gap:48px; flex-wrap:wrap; justify-content:flex-start; padding:40px; flex-direction:row; align-items:center;">
+
+    <!-- XS favicon -->
+    <svg width="16" height="28" viewBox="0 0 36 62" fill="none" stroke="#6B8F71">
+      <use href="#moai"/>
+    </svg>
+
+    <!-- SM nav -->
+    <div class="logo on-dark" style="gap:12px;">
+      <svg width="24" height="40" viewBox="0 0 36 62" fill="none" stroke="#6B8F71">
+        <use href="#moai"/>
+      </svg>
+      <div class="wordmark">
+        <span class="wm-top" style="font-size:16px; letter-spacing:3px;">PANTHEON</span>
+        <div class="wm-divider" style="background:#6B8F71; margin:3px 0;"></div>
+        <span class="wm-sub" style="font-size:7px; letter-spacing:5px;">LABS</span>
+      </div>
+    </div>
+
+    <!-- LG hero -->
+    <div class="logo on-dark">
+      <svg width="36" height="62" viewBox="0 0 36 62" fill="none" stroke="#6B8F71">
+        <use href="#moai"/>
+      </svg>
+      <div class="wordmark">
+        <span class="wm-top">PANTHEON</span>
+        <div class="wm-divider" style="background:#6B8F71;"></div>
+        <span class="wm-sub">LABS</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
